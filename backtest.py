@@ -31,7 +31,7 @@ atr_tp_multiplier = 5.0  # For ~1:20 SL:TP ratio
 risk_per_trade = 0.05
 min_order_size = 0.0005
 max_hold_candles = 60
-leverage = 2
+leverage = 5
 initial_balance = 10.0
 breakeven_atr = None  # Disable breakeven adjustment
 trailing_sl_atr = None  # Disable trailing SL
@@ -211,8 +211,6 @@ def run_backtest(df):
                 size = round(size, 4)
                 position_size_usdt = size * df['close'].iloc[i]
                 
-# Add this anywhere in backtest.py (e.g., line 10):
-   DEBUG_MARKER = "DEANBOT_20240427_V2"  # I'll detect this
                 # Log trade size calculation
                 logger.info(
                     f"[{df['timestamp'].iloc[i]}] Trade Size Calc: "
@@ -270,6 +268,7 @@ def run_backtest(df):
                 )
         
         # Check exit conditions for all open positions
+        VERIFICATION_2024 = "DEANBOT_READS_LIVE_FILE" 
         positions_to_close = []
         for pos in positions:
             pos['position_candles'] += 1
