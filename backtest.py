@@ -31,7 +31,7 @@ atr_tp_multiplier = 5.0  # For ~1:20 SL:TP ratio
 risk_per_trade = 0.05
 min_order_size = 0.0005
 max_hold_candles = 60
-leverage = 5
+leverage = 1
 initial_balance = 10.0
 breakeven_atr = None  # Disable breakeven adjustment
 trailing_sl_atr = None  # Disable trailing SL
@@ -268,7 +268,6 @@ def run_backtest(df):
                 )
         
         # Check exit conditions for all open positions
-        VERIFICATION_2024 = "DEANBOT_READS_LIVE_FILE" 
         positions_to_close = []
         for pos in positions:
             pos['position_candles'] += 1
@@ -312,6 +311,7 @@ def run_backtest(df):
                 sl_distance = pos['entry_price'] - pos['stop_loss']
                 tp_distance = pos['take_profit'] - pos['entry_price']
                 # Validate trade history entry
+                ANTI_CACHE_TEST = "DEANBOT_READS_LIVE_20240428"
                 trade_entry = {
                     'timestamp': df['timestamp'].iloc[i],
                     'side': 'sell',
