@@ -1,0 +1,108 @@
+Trade Summary:
+Total Trades: 344
+Wins: 12
+Losses: 332
+Win Rate (%): 3.49
+
+Mean Profit/Loss by Exit Type (USDT):
+Stop Loss: -0.009178 (Trades: 332)
+Take Profit: 0.078180 (Trades: 9)
+Time Exit: 0.020256 (Trades: 3)
+
+Average Trade Duration (Candles):
+Overall: 2.25
+Wins: 33.83
+Losses: 1.11
+Average Trade Duration (Minutes): 11.25
+
+Candles Held by Exit Type:
+Stop Loss: 1.11 candles
+Take Profit: 25.44 candles
+Time Exit: 59.00 candles
+
+Trades by Hour:
+entry_hour
+0      9
+1     14
+2      9
+3      8
+4      7
+5     18
+6     11
+7      2
+8     26
+9      5
+10    16
+11     8
+12     6
+13    19
+14    30
+15    31
+16    12
+17    22
+18    24
+19    11
+20    20
+21    19
+22     4
+23    13
+Name: count, dtype: int64
+
+Mean ATR at Entry:
+  Overall: 0.8062
+  Wins: 0.8061
+  Losses: 0.8062
+
+macd_at_entry:
+  Overall: -1.098096
+  Wins: -1.162694
+  Losses: -1.095761
+
+signal_at_entry:
+  Overall: -0.702963
+  Wins: -0.808395
+  Losses: -0.699153
+
+hist_at_entry:
+  Overall: -0.395133
+  Wins: -0.354299
+  Losses: -0.396609
+
+Mean SL/TP Distances (USDT):
+Stop Loss Distance: 0.1600
+Take Profit Distance: 4.0723
+SL:TP Ratio: 0.04:1
+
+Additional Metrics:
+Total Profit/Loss (USDT): -2.2828
+Profit Factor: 0.25
+Average Trade Size (SOL): 0.0106
+
+Partial Conditions Summary:
+Total Partial Conditions: 483
+
+RSI Statistics:
+  Count: 483
+  Mean: 8.58193
+  Min: 1.19
+  Max: 12.00
+  RSI < 25 Count: 483
+
+MACD > Signal Statistics:
+  MACD > Signal Count: 0
+  Percentage: 0.0000
+
+Hist Statistics:
+  Count: 483
+  Mean: -0.353034
+  Min: -1.0737
+  Max: -0.0513
+  Negative Hist Count: 483
+  Hist > 0.001 Count: 0
+
+Sample Partial Conditions (First 5):
+[2024-05-30 05:40:00],RSI=11.59,MACD=-0.3485,Signal=-0.1844,Hist=-0.1641
+[2024-05-30 20:05:00],RSI=11.75,MACD=-0.7651,Signal=-0.3994,Hist=-0.3657
+[2024-05-30 20:10:00],RSI=11.48,MACD=-0.8743,Signal=-0.4944,Hist=-0.3799
+[2024-05-31 23:30:00],RSI=6.87,MACD=-0.2813,Signal=-0.1471,Hist=-0.1342
+[2024-06-01 23:30:00],RSI=11.19,MACD=-0.2405,Signal=-0.1712,Hist=-0.0692
