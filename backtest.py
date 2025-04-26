@@ -93,8 +93,6 @@ def calculate_indicators(df):
     # Volume SMA
     df['volume_sma'] = df['volume'].rolling(window=volume_sma_period).mean()
     
-# Add this anywhere in backtest.py (e.g., line 10):
-   DEBUG_MARKER = "DEANBOT_20240427_V2"  # I'll detect this
     # Log indicator stats
     logger.info(f"Raw RSI range: {df['rsi'].min():.2f} to {df['rsi'].max():.2f}")
     logger.info(f"Raw MACD range: {df['macd'].min():.4f} to {df['macd'].max():.4f}")
@@ -213,6 +211,8 @@ def run_backtest(df):
                 size = round(size, 4)
                 position_size_usdt = size * df['close'].iloc[i]
                 
+# Add this anywhere in backtest.py (e.g., line 10):
+   DEBUG_MARKER = "DEANBOT_20240427_V2"  # I'll detect this
                 # Log trade size calculation
                 logger.info(
                     f"[{df['timestamp'].iloc[i]}] Trade Size Calc: "
